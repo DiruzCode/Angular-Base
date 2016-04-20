@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Base AngularJs!</title>
+
+    <link href="bundles/css/default.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body ng-app="app" ng-controller="main.controller">
+
+
+    <div ui-view=""></div>
+
+
+    <!-- bower_components -->
+
+
+    <!-- inject:services:js -->
+    <script src="services/apiService.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:app:js -->
+    <script src="app.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:boot:js -->
+    <script src="boot/config.js"></script>
+    <script src="boot/routing-layout.js"></script>
+    <script src="boot/routing-static.js"></script>
+    <script src="boot/routing-dinamic.js"></script>
+    <script src="boot/run.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:layouts:js
+    <script src="layouts/error/module.js"></script>
+-->
+    <!-- endinject -->
+
+    <!-- inject:defaultLayout:js -->
+    <script src="modules/home/module.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:modules:js -->
+    <!-- endinject -->
+
+    <!-- inject:components:js -->
+    <script src="components/ng-enter/ng-enter.js"></script>
+    <!-- endinject -->
+
+  </body>
+</html>
